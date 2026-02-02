@@ -1,0 +1,204 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaf2f8;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;         /* Vertically center image and text */
+    gap: 0.8rem;                 /* Space between image and text */
+  }
+  
+  
+  .nav a, .welcome {
+    margin-left: 1rem;
+    font-weight: 500;
+    color: #2980b9;
+  }
+  
+  .logout-btn {
+    margin-left: 1rem;
+    background-color: #d63031;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+  }
+
+  .user-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+  }
+  
+  .profile-dropdown a,
+  .profile-dropdown button {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .profile-dropdown button:hover,
+  .profile-dropdown a:hover {
+    color: #2980b9;
+  }
+
+  .profile-dropdown {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    z-index: 100;
+  }
+  
+  .dropdown-header {
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdown-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 0.2rem;
+  }
+  
+  
+  .dropdown-email {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+  }
+  
+  
+  .dropdown-divider {
+    border: none;
+    border-top: 1px solid #ecf0f1;
+    margin: 0.5rem 0;
+  }
+
+  .dropdown-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-links a:hover {
+    color: #2980b9;
+  }
+  
+  .profile-dropdown a,
+  .profile-dropdown button {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0.2rem 0;
+    transition: color 0.2s ease;
+  }
+  
+  .profile-dropdown a:hover,
+  .profile-dropdown button:hover {
+    color: #2980b9;
+  }
+  
+  .logout-btn {
+    background-color: #fbeee0;
+    color: #d63031;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #f8c9c1;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .logout-btn:hover {
+    background-color: #f8d7da;
+  }
+
+
+  .logo-img {
+    height: 50px;           /* Adjust size as needed */
+    width: 50px;
+    border-radius: 50%;     /* Makes it a perfect circle */
+    object-fit: cover;      /* Ensures the image fills the circle */
+    border: 2px solid #2c3e50; /* Optional: adds a border around the circle */
+  }
+
+
+  .logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: brown;
+  }
+
+  .auth-btn {
+    font-size: 1.1rem;         /* Bigger text */
+    font-weight: 600;          /* Slightly bolder */
+    margin-left: 1.2rem;
+    color: #2980b9;
+    text-decoration: none;
+  }
+  
+  .auth-btn:hover {
+    color: #3498db;            /* Subtle hover effect */
+    text-decoration: underline;
+  }
+  
+  .dropdown-header-box {
+    background-color: #f8f9fa;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .dropdown-links a {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.2rem 0;
+    transition: color 0.2s ease;
+  }
+  
+  

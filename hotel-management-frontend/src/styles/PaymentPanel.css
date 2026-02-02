@@ -1,0 +1,99 @@
+.payment-panel {
+  padding: 2rem;
+}
+
+.payment-section {
+  margin-bottom: 2rem;
+}
+
+.payment-section input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.payment-section button {
+  padding: 0.5rem 1rem;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.payment-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+}
+
+.payment-search input,
+.payment-search select {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.payment-search button {
+  padding: 0.4rem 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.revenue-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #e6f7ff;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.revenue-heading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.revenue-amount {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #28a745;
+}
+
+.revenue-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.revenue-filters input {
+  padding: 0.4rem;
+}
+
+.revenue-filters button {
+  padding: 0.4rem 0.8rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.confirmation-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .confirmation-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .confirmation-container p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #636e72;
+  }
+  
+  .error {
+    color: #d63031;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .dashboard-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .dashboard-button:hover {
+    background-color: #218838;
+  }

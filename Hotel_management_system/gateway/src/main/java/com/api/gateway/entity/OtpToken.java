@@ -1,0 +1,31 @@
+package com.api.gateway.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class OtpToken {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String email;
+    private String otp;
+    private LocalDateTime expiry;
+
+    public OtpToken(String email, String otp, LocalDateTime localDateTime) {
+        this.email = email;
+        this.otp = otp;
+        this.expiry = localDateTime;
+    }
+}

@@ -1,0 +1,56 @@
+.guest-form-container {
+    max-width: 500px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .guest-form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .guest-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .guest-form-container input,
+  .guest-form-container select,
+  .guest-form-container textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .guest-form-container textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .guest-form-container button {
+    padding: 0.75rem;
+    background-color: #55efc4;
+    color: #2d3436;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .guest-form-container button:hover {
+    background-color: #00b894;
+    color: white;
+  }
+  
+  .error {
+    color: #d63031;
+    margin-top: 1rem;
+  }

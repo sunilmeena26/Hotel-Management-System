@@ -1,0 +1,46 @@
+.reservation-panel {
+    padding: 2rem;
+  }
+  
+  .reservation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  
+  .reservation-card {
+    background-color: #fff3cd;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ffeeba;
+  }
+  
+  .reservation-card button {
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #ffc107;
+    border: none;
+    cursor: pointer;
+  }
+
+  .reservation-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .reservation-search input,
+  .reservation-search select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .reservation-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+  }

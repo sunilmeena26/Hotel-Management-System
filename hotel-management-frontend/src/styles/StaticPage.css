@@ -1,0 +1,76 @@
+/* Base static page styling */
+.static-page {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #444;
+  }
+  
+  .static-page h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  .static-page h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .static-page p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact-specific layout */
+  .contact-page .contact-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 600px) {
+    .contact-page .contact-details {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Social icons */
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0077b6;
+  }
+
+  /* FAQ-specific styling */
+.faq-page .faq-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .faq-page .faq-list li {
+    margin-bottom: 1.5rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 4px solid #0077b6;
+    border-radius: 4px;
+  }
+  
+  /* Privacy-specific styling */
+  .privacy-page p {
+    margin-bottom: 1.2rem;
+  }
