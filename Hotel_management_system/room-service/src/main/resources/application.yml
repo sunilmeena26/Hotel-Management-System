@@ -4,10 +4,18 @@ server:
 spring:
   application:
     name: room-service
-  cloud:
-    config:
-      enabled: false
 
+  datasource:
+    url: jdbc:mysql://34.47.195.124:3306/hotel_db
+    username: root
+    password: Sunil@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 
 eureka:
   client:

@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: room-service
-          image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/room-service:v8
+          image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/room-service:v10
+          # image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/room-service:v8
           ports:
             - containerPort: 8087

@@ -14,7 +14,10 @@ spec:
     spec:
       containers:
         - name: gateway-service
-          image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/gateway-service:v6
+          image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/gateway-service:v13
+          # image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/gateway-service:v10
+          # image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/gateway-service:v9
+          # image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/gateway-service:v6
           # image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/gateway-service:v8
           ports:
             - containerPort: 8080
