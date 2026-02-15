@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eureka-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eureka-server
+  template:
+    metadata:
+      labels:
+        app: eureka-server
+    spec:
+      containers:
+        - name: eureka-server
+          image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/eureka-server@sha256:de97d4320590e5c36c157bf7e20ad08ccd91115d9d2f93bd3b662d8b44519fcf
+          # image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/eureka-server:v1
+          ports:
+            - containerPort: 8761

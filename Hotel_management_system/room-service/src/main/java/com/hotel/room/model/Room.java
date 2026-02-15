@@ -11,7 +11,7 @@ import lombok.*;
 
 @Entity
 @Table(name = "rooms")
-@Data
+@Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -32,4 +32,44 @@ public class Room {
 
     @NotNull
     private String roomPath;
+
+    public int getRoomNumber() {
+        return roomNumber;
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getRoomType() {
+        return roomType;
+    }
+
+    public String getRoomPath() {
+        return roomPath;
+    }
+
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setRoomType(String roomType) {
+        this.roomType = roomType;
+    }
+
+    public void setRoomPath(String roomPath) {
+        this.roomPath = roomPath;
+    }
 }

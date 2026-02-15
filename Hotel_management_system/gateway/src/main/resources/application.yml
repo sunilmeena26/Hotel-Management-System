@@ -1,3 +1,67 @@
+# server:
+#   port: 8080
+
+# spring:
+#   application:
+#     name: gateway
+#   cloud:
+#     config:
+#       enabled: false
+#     gateway:
+#     routes:
+#       - id: room-service
+#         uri: lb://room-service
+#         predicates:
+#           - Path=/rooms/**
+
+#     autoconfigure:
+#       exclude:
+#         - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+#         - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+#       # routes:
+#       #   - id: auth
+#       #     uri: lb://auth-service
+#       #     predicates:
+#       #       - Path=/auth/**
+
+#       #   - id: reservation
+#       #     uri: lb://reservation
+#       #     predicates:
+#       #       - Path=/api/reservations/**
+
+#       #   - id: guest-service
+#       #     uri: lb://guest-service
+#       #     predicates:
+#       #       - Path=/guest/**
+
+#       #   - id: payment-gateway
+#       #     uri: lb://payment-gateway
+#       #     predicates:
+#       #       - Path=/api/payments/**
+
+#       #   - id: staff-service
+#       #     uri: lb://staff-service
+#       #     predicates:
+#       #       - Path=/staff/**
+
+#       #   - id: rate-service
+#       #     uri: lb://rate-service
+#       #     predicates:
+#       #       - Path=/rates/**
+
+#       #   - id: room-service
+#       #     uri: lb://room-service
+#       #     predicates:
+#       #       - Path=/rooms/**
+
+# eureka:
+#   client:
+#     register-with-eureka: true
+#     fetch-registry: true
+#     service-url:
+#       defaultZone: http://eureka-server:8761/eureka
+
+
 server:
   port: 8080
 
@@ -6,49 +70,41 @@ spring:
     name: gateway
 
   config:
-    import: "optional:configserver:http://localhost:8888"
+    import: optional:configserver:
 
   cloud:
+    config:
+      enabled: false
+      import-check:
+        enabled: false
+
     gateway:
       routes:
-        - id: auth
-          uri: http://localhost:8080
-          predicates:
-            - Path=/auth/**
-
-        - id: reservation
-          uri: lb://reservation
-          predicates:
-            - Path=/api/reservations/**
-
-        - id: guest-service
-          uri: lb://guest-service
-          predicates:
-            - Path=/guest/**
-
-        - id: payment-gateway
-          uri: lb://payment-gateway
-          predicates:
-            - Path=/api/payments/**
-
-        - id: staff-service
-          uri: lb://staff-service
-          predicates:
-            - Path=/staff/**
-
-        - id: rate-service
-          uri: lb://rate-service
-          predicates:
-            - Path=/rates/**
-
         - id: room-service
           uri: lb://room-service
           predicates:
             - Path=/rooms/**
+
+  datasource:
+    url: jdbc:mysql://34.47.195.124:3306/hotel_db
+    username: root
+    password: Sunil@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka
+
+jwt:
+  secret: your_jwt_secret_key_which_should_be_very_secure
+  expiration: 1800000
+

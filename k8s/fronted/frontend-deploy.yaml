@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hotel-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hotel-frontend
+  template:
+    metadata:
+      labels:
+        app: hotel-frontend
+    spec:
+      containers:
+        - name: hotel-frontend
+          image: asia-south1-docker.pkg.dev/sunilproject-486218/hotel-repo/hotel-frontend:v1
+          ports:
+            - containerPort: 80

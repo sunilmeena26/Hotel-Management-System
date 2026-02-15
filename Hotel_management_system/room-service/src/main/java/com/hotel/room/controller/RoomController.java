@@ -22,12 +22,14 @@ public class RoomController {
    // @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/getAll")
     public List<Room> getAllRooms() {
-        return roomService.getAllRooms();
+        //return roomService.getAllRooms();
+        return List.of(); // TEMP until DB ready
     }
 
     @GetMapping("/get/{roomNumber}")
     public Room getRoomByNumber(@PathVariable int roomNumber) {
         return roomService.getRoomByNumber(roomNumber);
+        
     }
 
     @PostMapping("/addRoom")

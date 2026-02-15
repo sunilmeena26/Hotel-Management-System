@@ -6,10 +6,13 @@ import com.hotel.room.model.Room;
 import com.hotel.room.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+
 
 import java.util.List;
 import java.util.Optional;
 
+@ConditionalOnProperty(name = "db.enabled", havingValue = "true")
 @Service
 public class RoomService {
 
